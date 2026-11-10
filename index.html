@@ -3,105 +3,57 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="외부 API 연동, 데이터 정합성, 운영 장애 분석을 수행한 백엔드 개발자 고테아의 이력서">
+  <meta name="description" content="백엔드 개발자 고테아의 기술, 실무 적용 경험, 경력">
   <title>고테아 | Backend Engineer</title>
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
   <style>
-    :root { --ink:#17212c; --muted:#5b6774; --navy:#14304f; --accent:#147b8b; --line:#dce4ea; --soft:#f4f7f9; --green:#1c7a50; }
-    * { box-sizing:border-box; } body { margin:0; color:var(--ink); font-family:Pretendard,"Malgun Gothic",sans-serif; line-height:1.65; word-break:keep-all; }
-    .wrap { width:min(960px,calc(100% - 40px)); margin:auto; } header { background:var(--navy); color:#fff; padding:64px 0 50px; }
-    .eyebrow { color:#a9dce4; font-size:14px; font-weight:800; letter-spacing:1px; } h1 { margin:6px 0 8px; font-size:42px; letter-spacing:-1px; }
-    .role { margin:0; color:#d5e5eb; font-size:19px; } .summary { max-width:750px; margin:22px 0 0; font-size:17px; }
-    .links { display:flex; flex-wrap:wrap; gap:10px; margin-top:23px; } .links a { border:1px solid #7393a9; color:#fff; border-radius:8px; padding:7px 12px; text-decoration:none; font-weight:700; font-size:14px; }
-    section { padding:48px 0; border-bottom:1px solid var(--line); } h2 { font-size:25px; letter-spacing:-.4px; margin:0 0 7px; color:var(--navy); } .intro { margin:0 0 24px; color:var(--muted); }
-    .metrics,.skills { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; } .metric,.skill,.case { border:1px solid var(--line); border-radius:12px; background:#fff; }
-    .metric { padding:16px; } .metric strong { display:block; color:var(--accent); font-size:25px; line-height:1.2; } .metric span { font-size:13px; color:var(--muted); }
-    .skills { grid-template-columns:repeat(2,1fr); } .skill { padding:18px; } .skill h3 { margin:0 0 7px; color:var(--navy); font-size:17px; } .skill p { margin:0; color:var(--muted); font-size:15px; }
-    .case { padding:26px; margin:16px 0; } .case-head { display:flex; justify-content:space-between; gap:16px; align-items:flex-start; } .case h3 { margin:3px 0 5px; font-size:21px; letter-spacing:-.3px; }
-    .period { flex:none; background:#e4f2f4; color:#116575; border-radius:20px; padding:3px 10px; font-size:13px; font-weight:800; } .sub { color:var(--muted); margin:0 0 17px; }
-    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; } .box { background:var(--soft); border-radius:9px; padding:13px; font-size:14px; } .box b { display:block; color:var(--accent); margin-bottom:4px; font-size:12px; letter-spacing:.5px; }
-    .tags { margin-top:16px; display:flex; gap:6px; flex-wrap:wrap; } .tag { border:1px solid var(--line); border-radius:5px; padding:1px 8px; font-size:13px; color:var(--muted); }
-    .experience { border-left:2px solid var(--line); margin-left:7px; padding-left:24px; } .item { position:relative; padding:0 0 25px; } .item:before { content:""; position:absolute; width:11px; height:11px; border-radius:50%; background:var(--accent); left:-31px; top:8px; } .item h3 { margin:0; font-size:17px; } .item p { margin:4px 0 0; color:var(--muted); }
-    table { width:100%; border-collapse:collapse; font-size:15px; } th,td { border-bottom:1px solid var(--line); padding:11px 10px; text-align:left; vertical-align:top; } th { width:22%; color:var(--navy); background:var(--soft); }
-    .note { margin-top:20px; color:var(--muted); font-size:14px; } footer { padding:34px 0 52px; color:var(--muted); font-size:14px; }
-    @media (max-width:700px) { header { padding:46px 0 38px; } h1 { font-size:34px; } .metrics,.skills,.grid { grid-template-columns:1fr; } .case-head { display:block; } .period { display:inline-block; margin:8px 0; } th { width:32%; } }
+    :root { --ink:#1d2733; --muted:#5b6774; --navy:#14304f; --accent:#197a89; --line:#dbe3ea; --bg:#f7f9fb; --soft:#f1f5f7; }
+    * { box-sizing:border-box; } body { margin:0; color:var(--ink); background:var(--bg); font-family:Pretendard,"Malgun Gothic",sans-serif; line-height:1.7; word-break:keep-all; }
+    .wrap { width:min(960px,calc(100% - 40px)); margin:auto; } header { background:var(--navy); color:#fff; padding:52px 0 44px; }
+    .eyebrow { margin:0; color:#a5d8e1; font-weight:800; font-size:14px; letter-spacing:1px; } h1 { margin:4px 0 8px; font-size:40px; letter-spacing:-1px; } .role { margin:0; color:#d9e9ed; font-size:18px; }
+    .summary { max-width:720px; margin:20px 0 0; font-size:16.5px; } .links { display:flex; flex-wrap:wrap; gap:9px; margin-top:20px; } .links a { padding:6px 11px; border:1px solid #7294a8; border-radius:7px; color:#fff; font-size:14px; font-weight:700; text-decoration:none; }
+    section { padding:42px 0; } h2 { margin:0 0 6px; color:var(--navy); font-size:25px; letter-spacing:-.4px; } .sub { margin:0 0 22px; color:var(--muted); }
+    .skills { display:grid; grid-template-columns:1fr 1fr; gap:14px; } .skill { padding:18px 20px; border:1px solid var(--line); border-radius:12px; background:#fff; } .skill h3 { margin:0 0 9px; color:var(--navy); font-size:17px; } .skill h3::before { content:""; display:inline-block; width:4px; height:16px; margin-right:8px; background:var(--accent); border-radius:2px; vertical-align:-2px; }
+    .skill p { margin:0; color:var(--muted); font-size:14.5px; } .skill b { color:var(--ink); } .tags { display:flex; flex-wrap:wrap; gap:5px; margin:0 0 10px; } .tag { padding:1px 8px; border:1px solid var(--line); border-radius:5px; background:var(--soft); color:var(--navy); font-size:13px; font-weight:700; }
+    .career { display:grid; gap:12px; } .item { padding:20px; border-left:4px solid var(--accent); border-radius:0 10px 10px 0; background:#fff; box-shadow:0 1px 2px rgba(20,48,79,.04); } .item h3 { margin:0; font-size:18px; color:var(--navy); } .period { display:inline-block; margin-left:8px; color:var(--muted); font-size:14px; font-weight:500; } .item p { margin:7px 0 0; color:var(--muted); font-size:15px; } .item ul { margin:7px 0 0; padding-left:19px; color:var(--muted); font-size:14.5px; }
+    .note { margin-top:20px; padding:14px 16px; background:#e6f2f4; border-radius:9px; color:#155e6c; font-size:14px; } footer { padding:30px 0 48px; color:var(--muted); font-size:14px; border-top:1px solid var(--line); }
+    @media (max-width:700px) { header { padding:42px 0 34px; } h1 { font-size:33px; } .skills { grid-template-columns:1fr; } .period { display:block; margin:2px 0 0; } }
   </style>
 </head>
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow">BACKEND ENGINEER · JAVA / ORACLE / PYTHON</div>
+      <p class="eyebrow">BACKEND ENGINEER · JAVA / ORACLE / PYTHON</p>
       <h1>고테아</h1>
       <p class="role">외부 연계와 데이터 정합성을 검증 가능한 처리 흐름으로 고치는 백엔드 개발자</p>
-      <p class="summary">외부 API가 실패하거나 데이터가 맞지 않을 때, 화면의 결과만 보정하지 않습니다. 로그·원본 데이터·업무 규칙을 대조해 원인을 좁히고, 같은 조건에서 다시 검증할 수 있는 구조로 개선해 왔습니다.</p>
+      <p class="summary">공공기관 연구자 포털과 업무 시스템을 개발·운영하며, 외부 API 실패와 데이터 불일치의 원인을 로그·원본 데이터·업무 규칙으로 추적해 해결해 왔습니다.</p>
       <div class="links"><a href="https://github.com/vero-zero">GitHub</a><a href="https://github.com/vero-zero/synapse-paper-rag-plugin">Synapse 플러그인</a></div>
     </div>
   </header>
 
   <main class="wrap">
     <section>
-      <h2>핵심 지표</h2>
-      <p class="intro">공공기관 연구자 포털과 업무 시스템을 개발·운영하며 쌓은, 확인 가능한 백엔드 경험입니다.</p>
-      <div class="metrics">
-        <div class="metric"><strong>3년</strong><span>웹 시스템 개발 · 운영</span></div>
-        <div class="metric"><strong>3 → 1회</strong><span>검색 1건당 외부 API 호출</span></div>
-        <div class="metric"><strong>21,600건</strong><span>대량 처리 후 5개 테이블 검증</span></div>
-        <div class="metric"><strong>19개</strong><span>플러그인 테스트 · Ubuntu/Windows CI</span></div>
-      </div>
-    </section>
-
-    <section>
-      <h2>백엔드에서 증명한 역량</h2>
-      <p class="intro">기술 이름이 아니라, 실제 업무에서 책임진 문제와 검증 방법입니다.</p>
+      <h2>Skill</h2>
+      <p class="sub">기술 이름만 나열하지 않고, 실제로 사용한 업무와 문제 해결 경험을 함께 적었습니다.</p>
       <div class="skills">
-        <div class="skill"><h3>외부 API 연동과 장애 대응</h3><p>REST·SOAP 연동, 상태 흐름, 타임아웃과 오류 응답을 설계했습니다. 429, 토큰, 인코딩, SOAP 런타임, 방화벽 문제를 로그로 분리해 원인을 확인했습니다.</p></div>
-        <div class="skill"><h3>Oracle 데이터 정합성</h3><p>PL/SQL 프로시저와 이력 테이블을 분석해 금액·상태 불일치를 고쳤습니다. 집합 처리와 테이블 직접 대조로 대량 처리 성능과 결과를 함께 검증했습니다.</p></div>
-        <div class="skill"><h3>조회 성능과 SQL 개선</h3><p>중복 API 호출, 누적 페이지 재조회, 불필요한 컬럼·상관 서브쿼리, 1:N 조인 중복 합산을 찾아 호출 구조와 집계 방식을 개선했습니다.</p></div>
-        <div class="skill"><h3>운영 환경의 문제 분리</h3><p>Java 17 SOAP 런타임 누락, 개발망 방화벽, 파일 권한, 배포 Pod 로그 문제를 코드·설정·네트워크·권한 단위로 분리해 대응했습니다. Jenkins·Kubernetes 환경에서는 배포와 로그 추적을 지원했습니다.</p></div>
-        <div class="skill"><h3>상태·권한·변경 이력 설계</h3><p>신청·반려·실패·재작성 상태 흐름, 관리자 권한, 데이터 변경 이력을 구현했습니다. 결과뿐 아니라 결과가 만들어진 과정을 설명할 수 있게 만드는 것을 기준으로 삼습니다.</p></div>
-        <div class="skill"><h3>검증 중심 개발과 AI 활용</h3><p>원본 결과 대조, 합계 재검산, 부하 데이터 생성, 자동 테스트를 사용합니다. AI는 로그 분석과 구현 초안에 활용하되 설계·변경 범위·검증 기준은 직접 정합니다.</p></div>
+        <article class="skill"><h3>Backend · API Integration</h3><div class="tags"><span class="tag">Java 17</span><span class="tag">Spring 5.3</span><span class="tag">REST</span><span class="tag">SOAP/JAXB</span></div><p>연구자 포털에서 논문 검색 REST API와 원문 신청 SOAP을 하나의 흐름으로 연결했습니다. 요청 한도(429), 타임아웃, 토큰, 인코딩 오류를 로그로 추적하고 상태·오류 응답을 정비했습니다.</p></article>
+        <article class="skill"><h3>Database · Data Integrity</h3><div class="tags"><span class="tag">Oracle</span><span class="tag">SQL</span><span class="tag">PL/SQL</span><span class="tag">MyBatis · iBatis</span></div><p>식재료 수발주 시스템에서 주문·변경·확정 이력을 대조해 금액 불일치의 원인을 찾았습니다. 일괄 확정 프로시저를 집합 처리로 개선하고, 대량 처리 뒤 테이블 단위로 결과를 검증했습니다.</p></article>
+        <article class="skill"><h3>Query · Performance Improvement</h3><div class="tags"><span class="tag">SQL Tuning</span><span class="tag">Paging</span><span class="tag">Aggregation</span></div><p>필드별 중복 호출과 누적 페이지 재조회로 발생한 API 지연을 개선했습니다. 1:N 조인 중복 합산, 불필요한 컬럼과 상관 서브쿼리도 원인을 분리해 조회 구조를 고쳤습니다.</p></article>
+        <article class="skill"><h3>Operation · Deployment Support</h3><div class="tags"><span class="tag">Tomcat</span><span class="tag">Jenkins</span><span class="tag">Kubernetes</span><span class="tag">Gunicorn</span></div><p>Java 17 SOAP 런타임 누락, 개발망 방화벽, 파일 권한, Pod 로그 문제를 코드·설정·네트워크·권한으로 분리해 대응했습니다. Jenkins·Kubernetes 환경에서는 배포 후 로그 추적과 장애 분석을 지원했습니다.</p></article>
+        <article class="skill"><h3>Python · Data Pipeline</h3><div class="tags"><span class="tag">Python</span><span class="tag">Django</span><span class="tag">Pydantic</span><span class="tag">pytest</span></div><p>C# 계산 엔진을 Python/Django 웹 서비스로 이식하고 원본 결과와 대조해 오류를 수정했습니다. synapse-sdk로는 논문 수집·정제·청크화·품질 리포트 플러그인을 만들었습니다.</p></article>
+        <article class="skill"><h3>Quality · Collaboration</h3><div class="tags"><span class="tag">Git</span><span class="tag">GitHub Actions</span><span class="tag">Testing</span></div><p>수정 전후 로그, 원본 결과, 테이블 합계와 부하 테스트를 대조합니다. AI 도구는 분석과 구현 초안에 활용하되, 설계·변경 범위·검증 기준은 직접 정합니다.</p></article>
       </div>
     </section>
 
     <section>
-      <h2>대표 경험</h2>
-      <p class="intro">각 사례는 “문제 → 원인 확인 → 해결 → 검증” 순서로 정리했습니다.</p>
-
-      <article class="case">
-        <div class="case-head"><div><div class="eyebrow">CASE 01</div><h3>논문 검색과 원문 신청을 하나의 포털 흐름으로 연결</h3></div><span class="period">2026.03 ~ 현재</span></div>
-        <p class="sub">연구자 포털 해외원문복사 모듈 개발 · 운영 담당</p>
-        <div class="grid"><div class="box"><b>문제</b>해외 논문 유형은 API에서 직접 필터링할 수 없어, 한 페이지를 채우려 최대 9,900건을 선조회하고 이전 페이지를 반복 조회했습니다. 그 결과 429·500 오류와 긴 첫 검색이 발생했습니다.</div><div class="box"><b>해결</b>요청 URL·파라미터·응답·콜백을 로그로 추적해 호출 흐름을 확인했습니다. 통합 검색은 1회로 줄이고, 유형 필터는 화면 크기만큼 조회해 최대 5페이지(500건)까지만 후처리하도록 바꿨습니다.</div><div class="box"><b>검증 · 결과</b>기본 검색의 외부 API 호출을 3회에서 1회로 줄였습니다. 오류가 나면 이미 수집한 결과를 반환하고, 요청 수·응답·페이지 이동을 로그로 비교해 재발 여부를 확인했습니다.</div></div>
-        <div class="tags"><span class="tag">Java 17</span><span class="tag">Spring 5.3</span><span class="tag">MyBatis</span><span class="tag">Oracle</span><span class="tag">REST</span><span class="tag">SOAP/JAXB</span><span class="tag">Jenkins · Kubernetes</span></div>
-      </article>
-
-      <article class="case">
-        <div class="case-head"><div><div class="eyebrow">CASE 02</div><h3>수만 건 주문 처리의 이력·금액 정합성 개선</h3></div><span class="period">2026.06 ~ 2026.10</span></div>
-        <p class="sub">학교급식 식재료 수발주 시스템 · 주문변경 조회 및 일괄처리 이력 개선 단독 담당</p>
-        <div class="grid"><div class="box"><b>문제</b>최초 주문 확정 금액과 최종 변경 금액이 맞지 않았고, 일괄 확정 주문은 변경 이력 트리에서 누락됐습니다.</div><div class="box"><b>해결</b>주문·변경·확정 이력을 대조해 일괄 확정 프로시저의 이력 미기록을 원인으로 특정했습니다. 건별 호출 대신 INSERT … SELECT 집합 처리로 이력을 기록했습니다.</div><div class="box"><b>검증 · 결과</b>21,600건 부하 처리 후 주문·발주·명세·이력 등 5개 테이블 건수를 대조했습니다. 개발 서버에서는 누적 60만 건을 생성·일괄처리·삭제하며 반복 테스트했고, 이력 기록을 포함해 3만 건 이상을 1분 이내 처리했습니다.</div></div>
-        <div class="tags"><span class="tag">Oracle PL/SQL</span><span class="tag">SQL</span><span class="tag">NexacroN</span><span class="tag">iBatis</span><span class="tag">대량 처리</span></div>
-      </article>
-
-      <article class="case">
-        <div class="case-head"><div><div class="eyebrow">CASE 03</div><h3>논문을 RAG 데이터셋으로 만드는 Synapse 플러그인</h3></div><span class="period">2026.11 · 개인</span></div>
-        <p class="sub">데이터메이커 synapse-sdk 기반 개인 프로젝트</p>
-        <div class="grid"><div class="box"><b>목표</b>오픈액세스 논문을 수집하고, 검색에 활용할 수 있는 청크 데이터셋과 품질 리포트로 변환했습니다.</div><div class="box"><b>구현</b>수집·중복 제거·문장 단위 청크·출처 메타데이터·품질 지표를 분리했습니다. 플랫폼 공통 처리와 변환 로직을 분리했습니다.</div><div class="box"><b>검증 · 결과</b>원본 로직과 15개 조건을 대조해 불일치 1건을 수정하고, 19개 테스트를 Ubuntu·Windows GitHub Actions에서 실행했습니다.</div></div>
-        <div class="tags"><span class="tag">Python 3.12</span><span class="tag">synapse-sdk</span><span class="tag">Pydantic</span><span class="tag">httpx</span><span class="tag">pytest</span><span class="tag">GitHub Actions</span></div>
-      </article>
-    </section>
-
-    <section>
-      <h2>경력</h2>
-      <div class="experience">
-        <div class="item"><h3>(주)엑소텍 · 백엔드 개발자 <span class="period">2023.11 ~ 현재</span></h3><p>공공기관 웹 시스템 개발·유지관리. 연구자 포털 외부 연계, 연구자 프로필·검색, 학교급식 주문 관리, 보조금 관리 모듈을 개발했습니다.</p></div>
-        <div class="item"><h3>수열에너지 통합 설계 플랫폼 · 웹 개발 전담 <span class="period">2023.11 ~ 2023.12</span></h3><p>C# 계산 엔진을 Python/Django 웹 서비스로 이식하고, 원본과 결과 대조로 정수 변환·비용 값 오류를 수정했습니다. 서버 이전과 Gunicorn 운영 문서를 작성했습니다.</p></div>
+      <h2>Experience & Education</h2>
+      <p class="sub">현재 실무 경험과 개발자로 전환한 교육 과정을 함께 정리했습니다.</p>
+      <div class="career">
+        <article class="item"><h3>(주)엑소텍 · 백엔드 개발자 <span class="period">2023.11 ~ 현재</span></h3><p>공공기관 웹 시스템 개발·운영</p><ul><li>연구자 포털의 논문 검색·원문 신청 외부 연계 서비스 개발·운영</li><li>연구자 프로필·검색, 학교급식 주문관리, 보조금 관리 기능 개발</li><li>외부 API, Oracle 프로시저, 상태·권한·데이터 이력 문제 분석과 개선</li></ul></article>
+        <article class="item"><h3>홍익대학교 빅데이터 분석 기반 비즈니스 개발자 양성과정 <span class="period">2023</span></h3><p>개발자 전환 교육 과정 수료</p><ul><li>Python 기반 데이터 분석과 머신러닝·딥러닝 기초 학습</li><li>Django·Flask 웹 개발과 공공 데이터 API 활용 프로젝트 수행</li><li>이후 실무에서 Java·Oracle 기반 업무 시스템과 Python 웹 서비스를 개발</li></ul></article>
       </div>
-    </section>
-
-    <section>
-      <h2>기술</h2>
-      <table><tr><th>백엔드</th><td>Java 17, Spring Framework 5.3, 전자정부프레임워크, MyBatis, iBatis, JSP</td></tr><tr><th>데이터베이스</th><td>Oracle SQL · PL/SQL, 쿼리 튜닝, DDL 설계, MySQL</td></tr><tr><th>연동 · 운영</th><td>REST, SOAP/JAXB, Spring Security, Jenkins · Kubernetes 환경 로그 추적, Tomcat, Ubuntu, Gunicorn</td></tr><tr><th>Python</th><td>Python, Django, synapse-sdk, Pydantic, httpx, pytest</td></tr><tr><th>품질</th><td>Git, GitHub Actions, 원본 결과 대조, 테이블 합계 검증, 부하 테스트</td></tr></table>
-      <p class="note">기술은 실무 적용 또는 개인 프로젝트에서 검증한 범위만 기재했습니다. Jenkins·Kubernetes는 파이프라인을 새로 구축한 경험이 아니라 개발·배포 환경의 로그 추적과 장애 분석 경험입니다.</p>
+      <p class="note">Jenkins·Kubernetes는 파이프라인을 새로 구축한 경험이 아니라, 개발·배포 환경에서 로그를 추적하고 장애 원인을 분리한 경험입니다.</p>
     </section>
   </main>
   <footer><div class="wrap">고테아 · Backend Engineer · <a href="https://github.com/vero-zero">github.com/vero-zero</a></div></footer>
