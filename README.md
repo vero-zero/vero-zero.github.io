@@ -1,6 +1,6 @@
 <div align="center">
 
-# 고테아 · AI Backend Engineer
+# teako · Backend Developer
 
 **기회를 잡기 위해 실행하고 부딪히는 AI 백엔드 개발자**
 
