@@ -44,7 +44,7 @@ AI 도구는 구현과 탐색의 생산성을 높이는 데 쓰되, **확보한 
 | 영역 | 기술 | 실제로 한 일 |
 |---|---|---|
 | **Java · Spring** | Java 17, Spring 5.3, 전자정부표준프레임워크, MyBatis, iBatis, JSP | 조회 · 등록 · 수정, 관리자 기능, 상태 기반 업무 로직 |
-| **Python** | Python, Django, Flask, Gunicorn | 계산 · 데이터 처리 웹 서비스, REST API, Flask/Gunicorn 서버 배포 |
+| **Python** | Python, Flask, Gunicorn, Django | Flask 계산 · 데이터 처리 웹 서비스와 Gunicorn 서버 배포(실무), Django 웹 개발(교육 과정) |
 | **Database** | Oracle PL/SQL, SQL 튜닝, MySQL, ERD/DDL | 프로시저 · 집합 처리, 정산 · 이력 검증, 과거 데이터 보정 |
 | **Integration** | REST, SOAP/JAXB | 외부 API 연동, 페이징 · 호출 제어, 오류 · 타임아웃 · 재시도 처리 |
 | **Infra · CI** | Ubuntu, Tomcat, Jenkins, Kubernetes, GitHub Actions | 재배포, 서버 · DB 이전, 환경 설정, CI |
@@ -74,7 +74,7 @@ AI 도구는 구현과 탐색의 생산성을 높이는 데 쓰되, **확보한 
 <sub>Java · Spring Boot · Thymeleaf · Oracle · REST · Tomcat</sub></td></tr>
 <tr><td><b>Research Engineering Calculation Platform</b><br><sub>2023.11 – 2023.12</sub></td>
 <td>연구진의 C# 계산 프로그램을 Python 웹 서비스로 이식, 결과 대조로 이식 오류 수정, 대학 서버 이전 · Flask/Gunicorn 배포 문서화<br>
-<sub>Python · Django · Flask · MySQL · Ubuntu · Gunicorn</sub></td></tr>
+<sub>Python · Flask · MySQL · Ubuntu · Gunicorn</sub></td></tr>
 </table>
 
 ### 홍익대학교 · 빅데이터 분석 기반 비즈니스 개발자 양성과정 `2023.04 – 2023.11`
